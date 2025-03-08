@@ -1,46 +1,129 @@
-# Getting Started with Create React App
+# NY Times Most Popular Articles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that displays the NY Times Most Popular Articles and allows users to view article details. This project demonstrates a master/detail pattern using modern React practices.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of the most popular articles from the NY Times API
+- Click on articles to view detailed information
+- Search articles based on title
+- Responsive design that works on various screen sizes
+- Dark mode support
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 19
+- TypeScript
+- React Router v7
+- Tailwind CSS
+- Jest & React Testing Library
+- Cypress for E2E testing
+- Webpack for bundling
+- ESLint & Prettier for code quality
+- SonarCloud for static code analysis
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+src/
+├── api/              # API related functions
+├── components/       # React components
+│   ├── __tests__/    # Component tests
+├── api.ts/          # API functions
+├── types.ts/        # TypeScript type definitions
+└── App.tsx          # Main application component
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v16 or later)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/ayishanajlaa/ny-times-ayisha.git
+cd ny-times-ayisha
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Create a `.env` file in the root directory with your NY Times API key:
+```
+REACT_APP_API_KEY=your_api_key_here
+REACT_APP_API_URL=https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Note: You can obtain an API key by signing up at https://developer.nytimes.com/get-started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running the Application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Start the development server:
+```bash
+npm start
+```
 
-## Learn More
+The application will be available at http://localhost:8080
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Building for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
+
+The bundled files will be in the `dist` directory.
+
+## Testing
+
+### Running Unit Tests
+
+```bash
+# Run tests
+npm test
+
+# Run tests with coverage report
+npm run test:coverage
+```
+
+The coverage report will be available in the `coverage` directory.
+
+### Running E2E Tests
+
+```bash
+# Open Cypress Test Runner
+npm run cypress:open
+
+# Run Cypress tests headlessly
+npm run cypress:run
+```
+
+## Code Quality
+
+### Linting and Formatting
+
+```bash
+# Run ESLint
+npm run lint
+
+# Format code with Prettier
+npm run format
+```
+
+### SonarCloud Analysis
+
+This project uses SonarCloud for continuous code quality analysis. SonarCloud provides static code analysis to detect bugs, vulnerabilities, and code smells.
+
+#### SonarCloud Badge
+
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=ny-times-most-popular-articles)
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
