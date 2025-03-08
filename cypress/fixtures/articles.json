@@ -1,0 +1,70 @@
+{
+    "results": [
+      {
+        "id": 1,
+        "title": "Test Article 1",
+        "byline": "By Test Author",
+        "abstract": "This is a test article about politics and world events.",
+        "published_date": "2023-01-01",
+        "url": "https://example.com/article/1",
+        "section": "Politics",
+        "subsection": "World",
+        "des_facet": ["Politics", "World News", "Test Topic"],
+        "media": [
+          {
+            "media-metadata": [
+              { "url": "https://via.placeholder.com/75" },
+              { "url": "https://via.placeholder.com/150" },
+              { "url": "https://via.placeholder.com/600" }
+            ]
+          }
+        ],
+        "related_urls": [
+          {
+            "url": "https://example.com/related/1",
+            "suggested_link_text": "Related Test Article 1"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Test Article 2 About Technology",
+        "byline": "By Another Author",
+        "abstract": "This is a test article about technology and innovation.",
+        "published_date": "2023-01-02",
+        "url": "https://example.com/article/2",
+        "section": "Technology",
+        "subsection": "Innovation",
+        "des_facet": ["Technology", "Innovation", "AI"],
+        "media": [
+          {
+            "media-metadata": [
+              { "url": "https://via.placeholder.com/75" },
+              { "url": "https://via.placeholder.com/150" },
+              { "url": "https://via.placeholder.com/600" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Test Article 3 About Sports",
+        "byline": "By Sports Writer",
+        "abstract": "This is a test article about sports and competition.",
+        "published_date": "2023-01-03",
+        "url": "https://example.com/article/3",
+        "section": "Sports",
+        "subsection": "Olympic",
+        "des_facet": ["Sports", "Olympics", "Competition"],
+        "media": [
+          {
+            "media-metadata": [
+              { "url": "https://via.placeholder.com/75" },
+              { "url": "https://via.placeholder.com/150" },
+              { "url": "https://via.placeholder.com/600" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
